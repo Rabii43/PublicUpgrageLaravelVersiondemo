@@ -12,6 +12,13 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .babelConfig({
+        presets: [
+            ['@babel/preset-env', { targets: { node: 'current' } }]
+        ],
+        plugins: ['@babel/plugin-proposal-optional-chaining']
+    })
     .postCss('resources/css/app.css', 'public/css', [
-        //
+        require('tailwindcss'),
+        require('autoprefixer'),
     ]);
