@@ -3,19 +3,20 @@
 This document provides a comprehensive guide for upgrading Laravel versions in this project.
 
 ## Overview
-
+ 
 | Version | PHP Required | Release Date | Status |
 |---------|-------------|--------------|--------|
 | Laravel 8 | ^7.3 \|\| ^8.0 | Feb 2020 | EOL |
 | Laravel 9 | ^8.0 | Feb 2022 | EOL |
-| Laravel 10 | ^8.1 | Feb 2023 | Maint |
+| Laravel 10 | ^8.1 | Feb 2023 | EOL |
 | Laravel 11 | ^8.2 | Mar 2024 | Maint |
-| Laravel 12 | ^8.2 | Feb 2025 | Latest |
+| Laravel 12 | ^8.2 | Feb 2025 | Maint |
+| Laravel 13 | ^8.4 | May 2026 | Latest |
 
 ## Upgrade Path
 
 ```
-main (Laravel 8) → upgrade-laravel-9 → upgrade-laravel-10 → upgrade-laravel-11 → upgrade-laravel-12
+main (Laravel 8) → upgrade-laravel-11 → upgrade-laravel-12 → upgrade-laravel-13
 ```
 
 ## Prerequisites
@@ -45,10 +46,11 @@ main (Laravel 8) → upgrade-laravel-9 → upgrade-laravel-10 → upgrade-larave
 
 ## Specific Upgrade Guides
 
-- [Laravel 8 to 9](laravel-8-to-9.md)
-- [Laravel 9 to 10](laravel-9-to-10.md)
-- [Laravel 10 to 11](laravel-10-to-11.md)
+- [Laravel 8 to 9](laravel-8-to-9.md) (Requires PHP 8.0)
+- [Laravel 9 to 10](laravel-9-to-10.md) (Requires PHP 8.1)
+- [Laravel 10 to 11](laravel-10-to-11.md) (Requires PHP 8.2)
 - [Laravel 11 to 12](laravel-11-to-12.md)
+- [Laravel 12 to 13](laravel-12-to-13.md) (Requires PHP 8.4)
 
 ## Git Branching Strategy
 
